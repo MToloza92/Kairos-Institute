@@ -1,16 +1,75 @@
-# React + Vite
+# Kairos Institute – Sitio Web Institucional Oficial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+© Kairos Institute. Todos los derechos reservados.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este repositorio contiene el desarrollo del **sitio web institucional oficial de Kairos Institute**, establecimiento educacional privado.
 
-## React Compiler
+El proyecto tiene un **carácter profesional y productivo**, y su finalidad es representar fielmente la identidad, valores y propuesta educativa de la institución, cumpliendo estándares modernos de desarrollo web, mantenibilidad y trabajo colaborativo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Propósito del Proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Desarrollar el sitio web institucional de **Kairos Institute**.
+* Comunicar de manera clara su proyecto educativo, valores y actividades.
+* Proveer una plataforma digital estable, escalable y mantenible.
+* Facilitar futuras ampliaciones y actualizaciones del sitio.
+
+---
+
+## 🏫 Sobre Kairos Institute
+
+Kairos Institute es una institución educativa privada enfocada en una experiencia pedagógica integral, con énfasis en el desarrollo humano, el aprendizaje significativo y la formación valórica.
+
+Este sitio web busca reflejar esa identidad de manera profesional y coherente.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **React** – Librería principal para la construcción de la interfaz.
+* **Vite** – Entorno de desarrollo y build optimizado.
+* **Tailwind CSS** – Sistema de estilos utilitarios para un diseño consistente.
+
+
+## 🎨 Diseño y Estándares
+
+* Diseño institucional sobrio y profesional
+* Uso consistente de Tailwind CSS
+* Componentes desacoplados del contenido
+* Código claro, documentado y mantenible
+
+---
+
+## 🤝 Lineamientos de Trabajo Colaborativo
+
+Este repositorio está diseñado para trabajo en equipo:
+
+* Código comentado y documentado.
+* Estructura clara y consistente.
+* Separación entre lógica, contenido y presentación.
+* Commits descriptivos y trazables.
+
+---
+
+
+## 🌐 Enlaces Oficiales
+
+* Sitio web: [https://www.kairosinstitute.cl](https://www.kairosinstitute.cl)
+* Instagram: [https://www.instagram.com/kairos_institute/](https://www.instagram.com/kairos_institute/)
+* Facebook: [https://www.facebook.com/ExperienciaEducativa1/](https://www.facebook.com/ExperienciaEducativa1/)
+
+---
+
+## ⚖️ Derechos y Uso
+
+Este proyecto y su contenido son propiedad de **Kairos Institute**.
+
+Queda prohibida la reproducción, distribución o modificación total o parcial sin autorización expresa de la institución.
+
+---
+
+**© Kairos Institute – Todos los derechos reservados**
+
