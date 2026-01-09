@@ -32,12 +32,12 @@ export default function Navigation() {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white border-b border-gray-200">
+    <nav className="w-full bg-white border-b border-gray-200 flex justify-center">
       <div className="max-w-7xl mx-auto px-4">
         {/* Barra superior del menú */}
         <div className="flex items-center justify-between h-14">
           {/* Logo o texto opcional (en desktop suele repetirse logo aquí) */}
-          <div className="font-semibold text-gray-800">
+          <div className="font-semibold text-gray-800 ">
             {/* TODO: Opcional: logo pequeño o nombre del colegio */}
           </div>
 
@@ -51,7 +51,7 @@ export default function Navigation() {
           </button>
 
           {/* Menú Desktop */}
-          <ul className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+          <ul className="hidden md:flex  items-center gap-6 text-sm font-medium text-gray-700">
             {/* Ítem con submenú */}
             <li className="relative">
               <button
