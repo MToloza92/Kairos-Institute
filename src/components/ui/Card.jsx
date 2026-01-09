@@ -49,7 +49,7 @@ export default function Card({
           src={image}
           alt={title}
           // TODO: Ajustar alt si la imagen no representa el título
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-center"
         />
       )}
 

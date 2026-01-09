@@ -1,11 +1,20 @@
 import EditorialDivider from "../ui/EditorialDivider";
 
 /**
- * COMPONENT: HomeDivider1
+ * HomeDivider1
  * --------------------------------------------------
- * Sección editorial secundaria utilizada como
- * transición hacia secciones funcionales.
+ * Sección editorial utilizada en la Home para
+ * introducir bloques conceptuales de alto nivel.
+ *
+ * - Construida sobre EditorialDivider (UI)
+ * - Contiene texto institucional extensivo
+ * - No maneja lógica ni estado
+ * - Su responsabilidad es estructural y semántica
+ *
+ * Puede replicarse en otras páginas bajo
+ * nuevos componentes específicos (ej: AboutDivider).
  */
+
 export default function HomeDivider1() {
   return (
     <EditorialDivider variant="dark">

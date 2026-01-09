@@ -1,11 +1,18 @@
 import EditorialDivider from "../ui/EditorialDivider";
 
 /**
- * COMPONENT: HomeDivider2
+ * HomeDivider2
  * --------------------------------------------------
- * Sección editorial secundaria utilizada como
- * transición hacia secciones funcionales.
+ * Sección editorial de transición utilizada
+ * como separador visual y semántico entre
+ * bloques funcionales de la Home.
+ *
+ * - Usa EditorialDivider como base visual
+ * - Contenido breve (frase o cita)
+ * - No introduce secciones, prepara el ritmo
+ *   para la siguiente
  */
+
 export default function HomeDivider2({
   text = "Educar es crear espacios donde cada niño pueda desarrollarse con sentido.",
 }) {

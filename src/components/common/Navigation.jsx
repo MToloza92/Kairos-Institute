@@ -32,18 +32,18 @@ export default function Navigation() {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white border-b border-gray-200 flex justify-center">
+    <nav className="w-full bg-gray-900 border-b border-gray-200 flex justify-center">
       <div className="max-w-7xl mx-auto px-4">
         {/* Barra superior del menú */}
         <div className="flex items-center justify-between h-14">
           {/* Logo o texto opcional (en desktop suele repetirse logo aquí) */}
-          <div className="font-semibold text-gray-800 ">
+          <div className="font-semibold">
             {/* TODO: Opcional: logo pequeño o nombre del colegio */}
           </div>
 
           {/* Botón hamburguesa (solo visible en móvil) */}
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Abrir menú"
           >
@@ -51,23 +51,23 @@ export default function Navigation() {
           </button>
 
           {/* Menú Desktop */}
-          <ul className="hidden md:flex  items-center gap-6 text-sm font-medium text-gray-700">
+          <ul className="hidden md:flex  items-center gap-6 text-sm font-medium text-white">
             {/* Ítem con submenú */}
             <li className="relative">
               <button
                 onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
-                className="hover:text-black"
+                className="hover:text-gray-400"
               >
                 NUESTRO COLEGIO
               </button>
 
               {/* Submenú */}
               {isSubmenuOpen && (
-                <ul className="absolute top-full left-0 mt-2 bg-white border border-gray-200 shadow-md min-w-50">
+                <ul className="absolute top-full left-0 mt-2 bg-gray-900 border border-gray-900 shadow-md min-w-50">
                   <li>
                     <Link
                       to="/about"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-600"
                     >
                       Sobre Nosotros
                     </Link>
@@ -75,7 +75,7 @@ export default function Navigation() {
                   <li>
                     <Link
                       to="/projects"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-600"
                     >
                       Proyecto Educativo
                     </Link>
@@ -86,19 +86,19 @@ export default function Navigation() {
 
             {/* Ítems simples */}
             <li>
-              <Link to="/gallery" className="hover:text-black">
+              <Link to="/gallery" className="hover:text-gray-400">
                 Galería
               </Link>
             </li>
 
             <li>
-              <Link to="/admision" className="hover:text-black">
+              <Link to="/admision" className="hover:text-gray-400">
                 Admisión
               </Link>
             </li>
 
             <li>
-              <Link to="/contact" className="hover:text-black">
+              <Link to="/contact" className="hover:text-gray-400">
                 Contacto
               </Link>
             </li>
@@ -107,7 +107,7 @@ export default function Navigation() {
 
         {/* Menú Móvil */}
         {isMenuOpen && (
-          <ul className="md:hidden flex flex-col gap-2 py-4 text-sm text-gray-700">
+          <ul className="md:hidden flex flex-col gap-2 py-4 text-sm text-gray-200">
             {/* Submenú móvil */}
             <li>
               <button

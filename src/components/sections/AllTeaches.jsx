@@ -1,57 +1,54 @@
-import { useState, useEffect } from "react";
+import ImageCarousel from "../ui/ImageCarousel";
 import Button from "../ui/Button";
 
 /**
- * ALLTEACHES – Sección “Todo Enseña”
+ * AllTeaches
  * --------------------------------------------------
- * Carrusel institucional que muestra experiencias
- * educativas y refuerza la filosofía de Kairos Institute.
+ * Sección institucional "Todo Enseña".
  *
- * Incluye botón hacia el Proyecto Educativo.
+ * Función:
+ * - Comunicar la filosofía educativa de Kairos Institute
+ * - Mostrar experiencias educativas mediante un carrusel
+ * - Dirigir al usuario al Proyecto Educativo
+ *
+ * Arquitectura:
+ * - No maneja estado
+ * - No controla temporizadores
+ * - Consume ImageCarousel como componente reutilizable
  */
 
+/**
+ * IMÁGENES DEL CARRUSEL
+ * --------------------------------------------------
+ * CUANDO ESTÉN DISPONIBLES:
+ *
+ * 1. Guardar imágenes en:
+ *    public/images/all-teaches/
+ *
+ * 2. Reemplazar este arreglo con rutas reales.
+ *    El orden del arreglo define el orden del carrusel.
+ */
+const ALL_TEACHES_IMAGES = [
+  {
+    src: "/public/images/all-teaches/all-teaches (1).jpg",
+    alt: "Aprendizaje en entorno natural",
+  },
+  {
+    src: "/public/images/all-teaches/all-teaches (2).jpg",
+    alt: "Trabajo colaborativo",
+  },
+  {
+    src: "/public/images/all-teaches/all-teaches (3).jpg",
+    alt: "Exploración guiada",
+  },
+];
+
 export default function AllTeaches() {
-  /**
-   *   IMÁGENES DEL CARRUSEL
-   * --------------------------------------------------
-   * CUANDO ESTÉN DISPONIBLES:
-   *
-   * 1. Guardar imágenes en:
-   *    public/images/all-teaches/
-   *
-   * 2. Reemplazar este arreglo con rutas reales:
-   *
-   * const images = [
-   *   "/images/all-teaches/experiencia-1.jpg",
-   *   "/images/all-teaches/experiencia-2.jpg",
-   *   "/images/all-teaches/experiencia-3.jpg",
-   * ];
-   */
-  const images = [];
-
-  /**
-   * Estado de imagen actual
-   */
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  /**
-   * Autoplay del carrusel
-   */
-  useEffect(() => {
-    if (images.length === 0) return;
-
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <section className="w-full bg-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* --------------------------------------------------
-            TEXTO INSTITUCIONAL
+            CONTENIDO INSTITUCIONAL
             -------------------------------------------------- */}
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Todo enseña</h2>
@@ -68,27 +65,23 @@ export default function AllTeaches() {
         </div>
 
         {/* --------------------------------------------------
-            CARRUSEL DE IMÁGENES
-            -------------------------------------------------- */}
+            CARRUSEL DE EXPERIENCIAS
+            --------------------------------------------------
+            - Altura controlada por la sección
+            - El carrusel solo maneja comportamiento
+        */}
         <div className="relative w-full h-80 overflow-hidden rounded-lg bg-gray-200">
-          {images.length > 0 ? (
-            images.map((image, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ${
-                  index === currentIndex ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <img
-                  src={image}
-                  alt={`Experiencia educativa ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))
+          {ALL_TEACHES_IMAGES.length > 0 ? (
+            <ImageCarousel
+              images={ALL_TEACHES_IMAGES}
+              autoPlay={true}
+              interval={4000}
+              showControls={true}
+            />
           ) : (
             /**
              * PLACEHOLDER TEMPORAL
+             * Visible mientras no existan imágenes reales
              */
             <div className="w-full h-full flex items-center justify-center">
               <p className="text-gray-500 text-sm text-center px-4">

@@ -19,18 +19,20 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Columna 1: Identidad institucional */}
         <div>
-          <img
-            src="/images/logo-kairos.png"
-            alt="Logo Kairos Institute"
-            className="h-12 w-auto mb-4"
-          />
+          <h3 className="text-sm font-semibold text-gray-800 mb-3">About Us</h3>
+          <div className="flex gap-8">
+            <img
+              src="/public/images/kairos logo fondo.png"
+              alt="Logo Kairos Institute"
+              className="h-30 w-auto mb-4"
+            />
 
-          <p className="text-sm text-gray-600">
-            Institución educativa con enfoque de aprendizaje activo que promueve
-            el desarrollo integral y la relación significativa entre estudiantes
-            y docentes. Información institucional según sitio oficial y redes
-            sociales.
-          </p>
+            <p className="text-sm text-gray-600">
+              Institución educativa con enfoque de aprendizaje activo que
+              promueve el desarrollo integral y la relación significativa entre
+              estudiantes y docentes.
+            </p>
+          </div>
         </div>
 
         {/* Columna 2: Contacto */}

@@ -6,6 +6,8 @@ import Pillars from "../components/sections/Pillars";
 import AllTeaches from "../components/sections/AllTeaches";
 import HomeDivider1 from "../components/sections/HomeDivider1";
 import HomeDivider2 from "../components/sections/HomeDivider2";
+import Contact from "../components/sections/Contact";
+import Map from "../components/sections/Map";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <HomeDivider1 />
       <Pillars />
       <HomeDivider2 />
+      <Contact />
+      <Map />
       <Footer />
     </>
   );

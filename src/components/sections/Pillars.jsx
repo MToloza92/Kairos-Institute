@@ -44,28 +44,28 @@ const PILLARS_DATA = [
     title: "Educación Consciente",
     description:
       "Promovemos una educación consciente que considera el desarrollo emocional, social y académico de cada estudiante, respetando sus tiempos y procesos.",
-    image: null, // Reemplazar por string con ruta cuando exista imagen
+    image: "/public/images/pillars/Educación Consciente.png", // Reemplazar por string con ruta cuando exista imagen
   },
   {
     id: 2,
     title: "Aprendizaje Experiencial",
     description:
       "El aprendizaje se construye a partir de la experiencia directa, el pensamiento crítico y la participación activa del estudiante en su entorno.",
-    image: null,
+    image: "/public/images/pillars/Aprendizaje Experiencial.png", // Reemplazar por string con ruta cuando exista imagen
   },
   {
     id: 3,
     title: "Formación Integral",
     description:
       "Acompañamos el desarrollo integral de niños y jóvenes, fortaleciendo habilidades académicas, emocionales y sociales para la vida.",
-    image: null,
+    image: "/public/images/pillars/Formacion-integral.png", // Reemplazar por string con ruta cuando exista imagen
   },
   {
     id: 4,
     title: "Comunidad Educativa",
     description:
       "Fomentamos una comunidad educativa colaborativa, donde estudiantes, familias y docentes participan activamente del proceso formativo.",
-    image: null,
+    image: "/public/images/pillars/comunidad-educativa.png", // Reemplazar por string con ruta cuando exista imagen
   },
 ];
 
