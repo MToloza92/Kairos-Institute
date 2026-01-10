@@ -15,6 +15,7 @@
  */
 
 import SocialLinks from "./SocialLinks";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -33,7 +34,7 @@ export default function Header() {
           - Generalmente debería ser clickeable hacia "/"
           - Por ahora solo se muestra como imagen
         */}
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img
             src="/public/images/kairos-nombre-logo.PNG"
             // TODO: Verificar ruta y nombre final del logo
@@ -41,7 +42,7 @@ export default function Header() {
             // TODO: Ajustar alt según nombre oficial del colegio
             className="h-10 w-auto"
           />
-        </div>
+        </Link>
 
         {/* 
           Bloque de contacto y redes sociales

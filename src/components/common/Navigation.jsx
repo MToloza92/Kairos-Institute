@@ -66,7 +66,7 @@ export default function Navigation() {
                 <ul className="absolute top-full left-0 mt-2 bg-gray-900 border border-gray-900 shadow-md min-w-50">
                   <li>
                     <Link
-                      to="/about"
+                      to="/Sobre-Nosotros"
                       className="block px-4 py-2 hover:bg-gray-600"
                     >
                       Sobre Nosotros
@@ -74,7 +74,7 @@ export default function Navigation() {
                   </li>
                   <li>
                     <Link
-                      to="/projects"
+                      to="/Proyecto-Educativo"
                       className="block px-4 py-2 hover:bg-gray-600"
                     >
                       Proyecto Educativo
@@ -86,19 +86,19 @@ export default function Navigation() {
 
             {/* Ítems simples */}
             <li>
-              <Link to="/gallery" className="hover:text-gray-400">
+              <Link to="/Galeria" className="hover:text-gray-400">
                 Galería
               </Link>
             </li>
 
             <li>
-              <Link to="/admision" className="hover:text-gray-400">
+              <Link to="/Admision" className="hover:text-gray-400">
                 Admisión
               </Link>
             </li>
 
             <li>
-              <Link to="/contact" className="hover:text-gray-400">
+              <Link to="/Contact" className="hover:text-gray-400">
                 Contacto
               </Link>
             </li>
@@ -120,25 +120,25 @@ export default function Navigation() {
               {isSubmenuOpen && (
                 <ul className="pl-4 mt-2 flex flex-col gap-1">
                   <li>
-                    <Link to="/about">Sobre Nosotros</Link>
+                    <Link to="/Sobre-Nosotros">Sobre Nosotros</Link>
                   </li>
                   <li>
-                    <Link to="/projects">Proyecto Educativo</Link>
+                    <Link to="/Proyecto-Educativo">Proyecto Educativo</Link>
                   </li>
                 </ul>
               )}
             </li>
 
             <li>
-              <Link to="/gallery">Galería</Link>
+              <Link to="/Galeria">Galería</Link>
             </li>
 
             <li>
-              <Link to="/admision">Admisión</Link>
+              <Link to="/Admision">Admisión</Link>
             </li>
 
             <li>
-              <Link to="/contact">Contacto</Link>
+              <Link to="/Contact">Contacto</Link>
             </li>
           </ul>
         )}

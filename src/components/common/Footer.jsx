@@ -22,7 +22,7 @@ export default function Footer() {
           <h3 className="text-sm font-semibold text-gray-800 mb-3">About Us</h3>
           <div className="flex gap-8">
             <img
-              src="/public/images/kairos logo fondo.png"
+              src="/public/images/kairos logo transparente.png"
               alt="Logo Kairos Institute"
               className="h-30 w-auto mb-4"
             />

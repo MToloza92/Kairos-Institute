@@ -1,57 +1,75 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 /**
  * useEmail
  * --------------------------------------------------
- * Custom hook para gestionar el envío de emails.
+ * Hook personalizado para enviar correos usando EmailJS.
  *
- * Estado actual:
- * - Simula el envío (mock)
- *
- * Escalable a:
- * - EmailJS
- * - API REST
- * - Backend propio
+ * Responsabilidad:
+ * - Encapsular la lógica de envío
+ * - Exponer estados de carga, éxito y error
+ * - Evitar lógica de envío dentro del componente UI
  */
-
-export function useEmail() {
+export default function useEmail() {
   /**
-   * Estados del proceso de envío
+   * Estado que indica si el envío está en proceso
+   * Se usa para deshabilitar botones y mostrar feedback visual
    */
-  const [isSending, setIsSending] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  /**
+   * Estado que indica si el correo se envió correctamente
+   */
+  const [success, setSuccess] = useState(false);
+
+  /**
+   * Estado que almacena errores del envío
+   */
   const [error, setError] = useState(null);
 
   /**
-   * Función principal de envío
+   * sendEmail
+   * --------------------------------------------------
+   * Función asíncrona que envía los datos del formulario
+   *
+   * @param {Object} formData
+   * @param {string} formData.name
+   * @param {string} formData.email
+   * @param {string} formData.message
    */
   const sendEmail = async (formData) => {
-    setIsSending(true);
-    setIsSuccess(false);
+    setIsLoading(true);
+    setSuccess(false);
     setError(null);
 
     try {
-      /**
-       * SIMULACIÓN TEMPORAL
-       * -------------------
-       * Aquí irá la integración real más adelante
-       */
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      await emailjs.send(
+        "YOUR_SERVICE_ID", // Servicio configurado en EmailJS
+        "YOUR_TEMPLATE_ID", // Plantilla de correo
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "YOUR_PUBLIC_KEY" // Public Key de EmailJS
+      );
 
-      console.log("Datos enviados:", formData);
-
-      setIsSuccess(true);
+      setSuccess(true);
     } catch (err) {
-      setError("No se pudo enviar el mensaje. Intenta nuevamente.");
+      setError("No fue posible enviar el mensaje. Intente nuevamente.");
     } finally {
-      setIsSending(false);
+      setIsLoading(false);
     }
   };
 
+  /**
+   * El hook expone solo lo necesario al componente
+   */
   return {
     sendEmail,
-    isSending,
-    isSuccess,
+    isLoading,
+    success,
     error,
   };
 }

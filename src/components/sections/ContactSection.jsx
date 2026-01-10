@@ -22,9 +22,9 @@ const CONTACT_DATA = {
   address: "Camino a Caburgua Km. 8 - Sector El Turbio - Parcela 22, Pucón", // Cambiar por dirección real
 };
 
-export default function Contact() {
+export default function ContactSection() {
   return (
-    <section className="w-full bg-gray-50 py-20">
+    <section id="contact" className="w-full bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Encabezado de la sección */}
         <header className="text-center mb-12">

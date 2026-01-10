@@ -1,77 +1,94 @@
+import { useState } from "react";
+import useEmail from "../../hooks/useEmail";
+
 /**
  * ContactForm
  * --------------------------------------------------
- * Componente de formulario reutilizable.
+ * Formulario de contacto institucional.
  *
- * Responsabilidad:
- * - Renderizar campos de contacto
- * - Gestionar estructura del formulario
- *
- * No maneja:
- * - Envío real de datos
- * - Integración con backend
- *
- * Escalabilidad:
- * - Puede integrarse con EmailJS o API REST
- * - Puede incorporar validación (React Hook Form)
+ * Se conecta al hook useEmail para manejar
+ * el envío de correos sin lógica de backend.
  */
-
 export default function ContactForm() {
   /**
-   * IMPORTANTE:
-   * Este formulario es solo estructural.
-   * El botón no ejecuta envío real.
+   * Estado local del formulario
    */
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // TODO: implementar envío cuando exista backend o servicio de email
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  /**
+   * Hook de envío de correo
+   */
+  const { sendEmail, isLoading, success, error } = useEmail();
+
+  /**
+   * Maneja cambios en los inputs
+   */
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  /**
+   * Maneja el envío del formulario
+   */
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail(formData);
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      {/* Campo nombre */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">
-          Nombre completo
-        </label>
-        <input
-          type="text"
-          placeholder="Ingresa tu nombre"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-        />
-      </div>
+      <input
+        type="text"
+        name="name"
+        placeholder="Nombre completo"
+        value={formData.name}
+        onChange={handleChange}
+        className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+      />
 
-      {/* Campo email */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">
-          Correo electrónico
-        </label>
-        <input
-          type="email"
-          placeholder="correo@ejemplo.com"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-        />
-      </div>
+      <input
+        type="email"
+        name="email"
+        placeholder="Correo electrónico"
+        value={formData.email}
+        onChange={handleChange}
+        required
+        className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+      />
 
-      {/* Campo mensaje */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">
-          Mensaje
-        </label>
-        <textarea
-          rows={4}
-          placeholder="Escribe tu mensaje"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none"
-        />
-      </div>
+      <textarea
+        name="message"
+        placeholder="Tu mensaje"
+        rows={3}
+        value={formData.message}
+        onChange={handleChange}
+        required
+        className="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none"
+      />
 
-      {/* Botón */}
       <button
         type="submit"
-        className="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900"
+        disabled={isLoading}
+        className="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 disabled:opacity-50"
       >
-        Enviar mensaje
+        {isLoading ? "Enviando..." : "Enviar mensaje"}
       </button>
+
+      {/* Feedback al usuario */}
+      {success && (
+        <p className="text-green-600 text-sm">Mensaje enviado correctamente.</p>
+      )}
+
+      {error && <p className="text-red-600 text-sm">{error}</p>}
     </form>
   );
 }
