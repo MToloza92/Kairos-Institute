@@ -1,5 +1,6 @@
 import ImageCarousel from "../ui/ImageCarousel";
 import Button from "../ui/Button";
+import { Link } from "react-router-dom";
 
 /**
  * AllTeaches
@@ -59,9 +60,11 @@ export default function AllTeaches() {
             oportunidad para aprender y crecer.
           </p>
 
-          <Button variant="primary" size="md">
-            Conoce nuestro proyecto educativo
-          </Button>
+          <Link to="/Proyecto-Educativo">
+            <Button variant="primary" size="md">
+              Conoce nuestro proyecto educativo
+            </Button>
+          </Link>
         </div>
 
         {/* --------------------------------------------------
@@ -75,7 +78,7 @@ export default function AllTeaches() {
             <ImageCarousel
               images={ALL_TEACHES_IMAGES}
               autoPlay={true}
-              interval={4000}
+              interval={5300}
               showControls={true}
             />
           ) : (
