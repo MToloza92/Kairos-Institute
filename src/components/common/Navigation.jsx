@@ -16,6 +16,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HomeIcon } from "@heroicons/react/24/outline";
 
 export default function Navigation() {
   /**
@@ -36,9 +37,21 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Barra superior del menú */}
         <div className="flex items-center justify-between h-14">
-          {/* Logo o texto opcional (en desktop suele repetirse logo aquí) */}
-          <div className="font-semibold">
-            {/* TODO: Opcional: logo pequeño o nombre del colegio */}
+          {/* Logo / Home */}
+          <div className="flex items-center gap-4">
+            {/* Botón Home */}
+            {/* Home */}
+            <Link
+              to="/"
+              className="flex items-center justify-center w-10 h-10 rounded-md text-white hover:bg-gray-800 transition"
+              aria-label="Ir al inicio"
+              title="Inicio"
+            >
+              <HomeIcon className="w-5 h-5" />
+            </Link>
+
+            {/* Opcional: logo pequeño o nombre del colegio */}
+            {/* <span className="font-semibold text-white">Kairos</span> */}
           </div>
 
           {/* Botón hamburguesa (solo visible en móvil) */}
@@ -79,12 +92,19 @@ export default function Navigation() {
                     >
                       Proyecto Educativo
                     </Link>
+                    <Link
+                      to="/Talleres"
+                      className="block px-4 py-2 hover:bg-gray-600"
+                    >
+                      Talleres
+                    </Link>
                   </li>
                 </ul>
               )}
             </li>
 
             {/* Ítems simples */}
+
             <li>
               <Link to="/Galeria" className="hover:text-gray-400">
                 Galería
@@ -124,6 +144,9 @@ export default function Navigation() {
                   </li>
                   <li>
                     <Link to="/Proyecto-Educativo">Proyecto Educativo</Link>
+                  </li>
+                  <li>
+                    <Link to="/Talleres">Talleres</Link>
                   </li>
                 </ul>
               )}

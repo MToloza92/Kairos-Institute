@@ -68,7 +68,7 @@ export default function SocialLinks({
 
       {/* Email */}
       <a
-        href="mailto:contacto@kairos.cl"
+        href="mailto:finanzas@kairos.cl"
         // TODO: Cambiar por el correo oficial del colegio
         aria-label="Email"
         className={`text-gray-700 hover:text-black transition ${sizeClass}`}

@@ -18,7 +18,7 @@ import ContactForm from "../forms/ContactForm";
 
 const CONTACT_DATA = {
   phone: "+56 9 9166 0923", // Cambiar por teléfono oficial
-  email: "contacto@kairosinstitute.cl", // Cambiar por correo institucional
+  email: "finanzas@kairosinstitute.cl", // Cambiar por correo institucional
   address: "Camino a Caburgua Km. 8 - Sector El Turbio - Parcela 22, Pucón", // Cambiar por dirección real
 };
 

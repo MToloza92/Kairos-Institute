@@ -3,18 +3,22 @@ import Button from "../ui/Button";
 import { Link } from "react-router-dom";
 
 /**
- * AllTeaches
+ * TalleresHome
  * --------------------------------------------------
- * Sección institucional "Todo Enseña".
+ * Sección de resumen de Talleres impartidos por el colegio.
  *
  * Función:
- * - Comunicar la filosofía educativa de Kairos Institute
- * - Mostrar experiencias educativas mediante un carrusel
- * - Dirigir al usuario al Proyecto Educativo
+ * - Mostrar actividades extracurriculares y formativas
+ * - Presentar visualmente los talleres mediante un carrusel
+ * - Dirigir al usuario a la página completa de Talleres
+ *
+ * Uso:
+ * - Se utiliza únicamente en el Home
+ * - Versión resumida (preview)
  *
  * Arquitectura:
  * - No maneja estado
- * - No controla temporizadores
+ * - No controla lógica de datos
  * - Consume ImageCarousel como componente reutilizable
  */
 
@@ -24,27 +28,27 @@ import { Link } from "react-router-dom";
  * CUANDO ESTÉN DISPONIBLES:
  *
  * 1. Guardar imágenes en:
- *    public/images/all-teaches/
+ *    public/images/talleres/
  *
  * 2. Reemplazar este arreglo con rutas reales.
  *    El orden del arreglo define el orden del carrusel.
  */
-const ALL_TEACHES_IMAGES = [
+const TALLERES_IMAGES = [
   {
-    src: "/public/images/all-teaches/all-teaches (1).jpg",
-    alt: "Aprendizaje en entorno natural",
+    src: "/images/talleres/loremIpsum.webp",
+    alt: "Taller artístico escolar",
   },
   {
-    src: "/public/images/all-teaches/all-teaches (2).jpg",
-    alt: "Trabajo colaborativo",
+    src: "/images/talleres/loremIpsum.webp",
+    alt: "Taller deportivo",
   },
   {
-    src: "/public/images/all-teaches/all-teaches (3).jpg",
-    alt: "Exploración guiada",
+    src: "/images/talleres/loremIpsum.webp",
+    alt: "Taller científico y experimental",
   },
 ];
 
-export default function AllTeaches() {
+export default function TalleresHome() {
   return (
     <section className="w-full bg-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -52,31 +56,34 @@ export default function AllTeaches() {
             CONTENIDO INSTITUCIONAL
             -------------------------------------------------- */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Todo enseña</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Talleres Educativos
+          </h2>
 
           <p className="text-gray-700 mb-6">
-            En Kairos Institute entendemos que el aprendizaje ocurre en cada
-            experiencia, en cada espacio y en cada interacción. Todo es una
-            oportunidad para aprender y crecer.
+            En Kairos Institute entendemos los talleres como espacios de
+            exploración, desarrollo personal y aprendizaje activo, donde los
+            estudiantes fortalecen habilidades artísticas, deportivas,
+            científicas y sociales.
           </p>
 
-          <Link to="/Proyecto-Educativo">
+          <Link to="/talleres">
             <Button variant="primary" size="md">
-              Conoce nuestro proyecto educativo
+              Conoce nuestros talleres
             </Button>
           </Link>
         </div>
 
         {/* --------------------------------------------------
-            CARRUSEL DE EXPERIENCIAS
+            CARRUSEL DE ACTIVIDADES
             --------------------------------------------------
             - Altura controlada por la sección
             - El carrusel solo maneja comportamiento
         */}
         <div className="relative w-full h-80 overflow-hidden rounded-lg bg-gray-200">
-          {ALL_TEACHES_IMAGES.length > 0 ? (
+          {TALLERES_IMAGES.length > 0 ? (
             <ImageCarousel
-              images={ALL_TEACHES_IMAGES}
+              images={TALLERES_IMAGES}
               autoPlay={true}
               interval={5300}
               showControls={true}
@@ -88,7 +95,7 @@ export default function AllTeaches() {
              */
             <div className="w-full h-full flex items-center justify-center">
               <p className="text-gray-500 text-sm text-center px-4">
-                Aquí se mostrará el carrusel de experiencias educativas
+                Aquí se mostrará el carrusel de talleres del colegio
               </p>
             </div>
           )}

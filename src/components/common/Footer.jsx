@@ -44,13 +44,12 @@ export default function Footer() {
               📍 Camino a Caburgua Km. 8 - Sector El Turbio - Parcela 22, Pucón
               {/* Dirección extraída del sitio oficial de Kairos Institute */}
             </li>
-            <li>📍 Camino a Pto. Varas Km. 2, Frutillar</li>
             <li>
               ☎️ +56 9 9166 0923
               {/* Número de contacto según sitio oficial */}
             </li>
             <li>
-              ✉️ contacto@kairosinstitute.cl
+              ✉️ finanzas@kairosinstitute.cl
               {/* TODO: Cambiar si Kairos Institute tiene correo oficial distinto */}
             </li>
           </ul>

@@ -6,6 +6,7 @@ import ProyectoEducativo from "./pages/ProyectoEducativo";
 import Galeria from "./pages/Galeria";
 import Admision from "./pages/Admision";
 import Contact from "./pages/Contact";
+import Talleres from "./pages/Talleres";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/Admision" element={<Admision />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Talleres" element={<Talleres />} />
       </Routes>
     </BrowserRouter>
   );

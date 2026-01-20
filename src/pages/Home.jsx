@@ -3,7 +3,7 @@ import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import Hero from "../components/sections/Hero";
 import Pillars from "../components/sections/Pillars";
-import AllTeaches from "../components/sections/AllTeaches";
+import TalleresHome from "../components/sections/TalleresHome";
 import HomeDivider1 from "../components/sections/HomeDivider1";
 import HomeDivider2 from "../components/sections/HomeDivider2";
 import ContactSection from "../components/sections/ContactSection";
@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Navigation />
-      <AllTeaches />
+      <TalleresHome />
       <HomeDivider1 />
       <Pillars />
       <HomeDivider2 />
