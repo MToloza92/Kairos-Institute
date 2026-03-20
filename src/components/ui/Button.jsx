@@ -38,8 +38,9 @@ export default function Button({
    * TODO: Ajustar colores según identidad visual de Kairos Institute
    */
   const variantStyles = {
-    primary: "bg-green-700 text-white hover:bg-green-800 focus:ring-green-700",
-    secondary: "bg-gray-700 text-white hover:bg-gray-800 focus:ring-gray-700",
+    primary: "bg-[#4f8d3a] text-white hover:bg-[#3a6b2d] focus:ring-[#4f8d3a]",
+    secondary:
+      "bg-[#211915] text-white hover:bg-[#3a2c24] focus:ring-[#211915]",
     outline:
       "border border-gray-700 text-gray-700 hover:bg-gray-100 focus:ring-gray-700",
   };

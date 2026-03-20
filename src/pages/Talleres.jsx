@@ -35,7 +35,7 @@ export default function Talleres() {
             NUESTRA EDUCACIÓN
           </h2>
 
-          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-700">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <h3 className="font-semibold text-lg">Talleres Kairos</h3>
 
             <p>
@@ -62,7 +62,7 @@ export default function Talleres() {
             ¿Por qué los talleres son tan importantes?
           </h2>
 
-          <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-700">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 text-gray-900">
             <p>
               👉 Porque el cerebro aprende mejor en movimiento, con emoción y en
               contextos reales.
@@ -82,9 +82,9 @@ export default function Talleres() {
         {/* TALLERES */}
         <section className="space-y-12">
           {/* Taller */}
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Kayak</h3>
               <p className="italic text-sm">
                 Autonomía – Coordinación – Regulación emocional
@@ -99,9 +99,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
                 Taller de Primeros Auxilios
               </h3>
@@ -120,9 +120,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Montaña</h3>
               <p className="italic text-sm">
                 Resiliencia – Perseverancia – Orientación espacial
@@ -138,9 +138,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Arte</h3>
               <p className="italic text-sm">
                 Creatividad – Conexión emocional – Integración sensorial
@@ -157,9 +157,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Música</h3>
               <p className="italic text-sm">
                 Lenguaje – Memoria auditiva – Coordinación interhemisférica
@@ -176,9 +176,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Folclor</h3>
               <p className="italic text-sm">
                 Identidad – Ritmo – Cohesión social
@@ -196,9 +196,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Apicultura</h3>
               <p className="italic text-sm">
                 Cuidado – Ciencia en acción – Atención sostenida
@@ -214,9 +214,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller Audiovisual</h3>
               <p className="italic text-sm">
                 Comunicación – Pensamiento crítico – Tecnología
@@ -232,9 +232,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
                 Taller de Educación Física
               </h3>
@@ -252,9 +252,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
                 Taller de Huerta Escolar
               </h3>
@@ -282,9 +282,9 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
                 Taller de Educación Financiera
               </h3>

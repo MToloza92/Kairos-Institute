@@ -47,7 +47,7 @@ export default function About() {
             ¿Quiénes somos?
           </h2>
 
-          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-700">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <p>
               Para el Centro Educacional Kairos Institute la educación no solo
               consiste en la entrega de conocimientos desde un emisor (docente)
@@ -78,11 +78,11 @@ export default function About() {
             Misión
           </h2>
 
-          <div className="border-l-4 border-gray-300 pl-6 italic text-gray-700">
+          <div className="border-l-4 border-gray-300 pl-6 italic text-gray-900">
             Educar con propósito eterno, acompañar con amor verdadero.
           </div>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             En Kairos creemos que educar no es solo enseñar, es sembrar en
             tierra fértil. Caminamos junto a cada estudiante y su familia,
             respetando procesos, talentos y ritmos.
@@ -96,7 +96,7 @@ export default function About() {
             Visión
           </h2>
 
-          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-700">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <p>Crear un lugar donde educar sea sanar, fortalecer y liberar.</p>
 
             <p>
@@ -111,7 +111,7 @@ export default function About() {
         <Pillars />
 
         {/* CIERRE */}
-        <section className="max-w-3xl mx-auto text-center text-gray-700">
+        <section className="max-w-3xl mx-auto text-center text-gray-900">
           <p className="text-lg">
             Nuestro proyecto educativo integra comunidad, naturaleza y
             pensamiento crítico para formar personas conscientes y

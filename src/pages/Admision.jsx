@@ -51,7 +51,7 @@ export default function Admision() {
 
         {/* MATRÍCULA 2026 */}
         <section className="max-w-4xl mx-auto space-y-6">
-          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-700">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <p>PROCESO DE ADMISIÓN</p>
 
             <p>
@@ -68,11 +68,11 @@ export default function Admision() {
             Fechas
           </h3>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             {/* Línea vertical */}
             <div className="w-1 bg-gray-300 rounded-full"></div>
 
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-900">
               <p>
                 <strong>Inscripción:</strong> desde el 7 de julio al 31 de
                 agosto.
@@ -94,10 +94,10 @@ export default function Admision() {
             Documentos para postulación
           </h3>
 
-          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
 
-            <div className="space-y-4 text-gray-700">
+            <div className="space-y-4 text-gray-900">
               <p>
                 Entregar en secretaría o enviar al correo electrónico:
                 <strong> finanzas@kairosinstitute.cl</strong>

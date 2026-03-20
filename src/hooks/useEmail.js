@@ -45,14 +45,14 @@ export default function useEmail() {
 
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Servicio configurado en EmailJS
-        "YOUR_TEMPLATE_ID", // Plantilla de correo
+        "service_fiw3gtj", // Servicio configurado en EmailJS
+        "template_kop5btc", // Plantilla de correo
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY" // Public Key de EmailJS
+        "i0QfmQro1pSd8wA1W", // Public Key de EmailJS
       );
 
       setSuccess(true);

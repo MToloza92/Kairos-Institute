@@ -25,7 +25,7 @@ export default function EditorialDivider({
   variant = "light", // 'light' | 'dark'
 }) {
   const backgroundClass =
-    variant === "dark" ? "bg-gray-900 text-white" : "bg-white text-gray-900";
+    variant === "dark" ? "bg-[#211915] text-white" : "bg-white text-gray-900";
 
   return (
     <section className={`w-full py-24 ${backgroundClass}`}>

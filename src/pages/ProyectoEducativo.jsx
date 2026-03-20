@@ -40,17 +40,17 @@ export default function ProyectoEducativo() {
       <Navigation />
 
       {/* ==================================================
-    CONTENIDO PRINCIPAL – COLEGIO
+    CONTENIDO PRINCIPAL – centro educacional
    ================================================== */}
       <main className="relative max-w-5xl mx-auto px-6 py-20 space-y-20">
         {/* CONTENIDO REAL */}
         <div className="relative z-10 space-y-20">
           {/* ==================================================
-        COLEGIO – TÍTULO
+        centro educacional – TÍTULO
        ================================================== */}
           <section className="max-w-4xl mx-auto space-y-6">
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-              Colegio
+              Centro Educacional
             </h2>
           </section>
 
@@ -61,13 +61,13 @@ export default function ProyectoEducativo() {
               Inscripción Mineduc – Exámenes libres
             </h3>
 
-            <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-700">
+            <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 text-gray-900">
               <p>
                 <a
                   href="https://www.ayudamineduc.cl/ficha/examenes-libres-menores-de-18-anos-11"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-blue-600 hover:text-blue-800 underline"
+                  className="font-medium text-blue-800 hover:text-blue-900 underline"
                 >
                   Exámenes libres - menores de 18 años | Ayuda Mineduc
                 </a>
@@ -82,31 +82,16 @@ export default function ProyectoEducativo() {
               Certificado de Estudio Mineduc
             </h3>
 
-            <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-700">
+            <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 text-gray-900">
               <p>
                 <a
                   href="https://certificados.mineduc.cl/mvc/home/index"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-blue-600 hover:text-blue-800 underline"
+                  className="font-medium text-blue-800 hover:text-blue-900 underline"
                 >
                   Portal de Certificados en Línea
                 </a>
-              </p>
-            </div>
-          </section>
-
-          {/* 3. CERTIFICACIÓN OTEC */}
-          <section className="max-w-4xl mx-auto space-y-6">
-            <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-3">
-              <span className="w-6 h-px bg-gray-300"></span>
-              Certificación OTEC
-            </h3>
-
-            <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-700">
-              <p>
-                Aquí va un párrafo mencionando el convenio establecido con la
-                otec y beneficios
               </p>
             </div>
           </section>
@@ -114,7 +99,7 @@ export default function ProyectoEducativo() {
       </main>
 
       {/* ==================================================
-            ALUMNOS DEPORTIVOS
+            ESTUDIANTES DEPORTIVOS
            ================================================== */}
       <section className="space-y-6">
         <div className="">
@@ -131,14 +116,14 @@ export default function ProyectoEducativo() {
           <div className="max-w-7xl mx-auto px-6 py-12">
             <div className="max-w-5xl mx-auto px-6 space-y-6">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-                Alumnos Deportivos
+                Estudiantes Deportivos
               </h2>
-              <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+              <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
                 {/* Línea decorativa */}
                 <div className="w-1 bg-gray-300 rounded-full"></div>
 
                 {/* Contenido */}
-                <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div className="space-y-4 text-gray-900 leading-relaxed">
                   <p className="font-semibold">¿A quiénes acompañamos?</p>
 
                   <p>A estudiantes que:</p>
@@ -206,10 +191,10 @@ export default function ProyectoEducativo() {
               Preuniversitario
             </h2>
 
-            <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+            <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
               <div className="w-1 bg-gray-300 rounded-full"></div>
 
-              <div className="space-y-4 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-gray-900 leading-relaxed">
                 <p>
                   Nuestro enfoce humano flexible altamente personalizado,
                   preparamos a jovenes que desean rendir la prueba PAES,
@@ -250,12 +235,12 @@ export default function ProyectoEducativo() {
                 Inglés – English
               </h2>
 
-              <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
+              <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
                 {/* Línea decorativa */}
                 <div className="w-1 bg-gray-300 rounded-full"></div>
 
                 {/* Contenido */}
-                <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div className="space-y-4 text-gray-900 leading-relaxed">
                   <p>
                     Creemos que el aprendizaje de una lengua debe estar
                     conectado a la emoción, el cuerpo y la experiencia. Por eso,
