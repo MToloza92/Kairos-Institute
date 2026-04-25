@@ -14,6 +14,7 @@
 
 // Componentes estructurales comunes
 import Header from "../components/common/Header";
+import PageHero from "../components/sections/PageHero";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 
@@ -22,18 +23,12 @@ export default function Admision() {
     <>
       <Header />
 
-      {/* ==================================================
-          HERO DE PÁGINA
-          --------------------------------------------------
-          Función:
-          - Portada visual de la sección Admisión
-          - Espacio equivalente al carrusel del Home
-          - Aquí irá una imagen estática de fondo más adelante
-          - NO debe heredar estilos del <main>
-         ================================================== */}
-      <section className="w-full h-64 bg-gray-200 flex items-center justify-center">
-        <h1 className="text-3xl font-semibold text-gray-800">Admisión</h1>
-      </section>
+      <PageHero
+        backgroundImage="/images/pages/admision-hero.jpeg"
+        title="Proceso de Admisión"
+        description="¿Quieres que tu hijo/a sea parte de nuestra comunidad educativa? Aquí te contamos cómo es el proceso."
+        overlayOpacity={45}
+      />
 
       <Navigation />
 
@@ -51,7 +46,7 @@ export default function Admision() {
 
         {/* MATRÍCULA 2026 */}
         <section className="max-w-4xl mx-auto space-y-6">
-          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
+          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <p>PROCESO DE ADMISIÓN</p>
 
             <p>
@@ -68,7 +63,7 @@ export default function Admision() {
             Fechas
           </h3>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             {/* Línea vertical */}
             <div className="w-1 bg-gray-300 rounded-full"></div>
 
@@ -94,7 +89,7 @@ export default function Admision() {
             Documentos para postulación
           </h3>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
 
             <div className="space-y-4 text-gray-900">

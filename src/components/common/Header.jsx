@@ -36,7 +36,7 @@ export default function Header() {
         */}
         <Link to="/" className="flex items-center gap-3">
           <img
-            src="/public/images/kairos-nombre-logo.PNG"
+            src="/images/kairos-nombre-logo.PNG"
             // TODO: Verificar ruta y nombre final del logo
             alt="Kairos Institute"
             // TODO: Ajustar alt según nombre oficial del colegio

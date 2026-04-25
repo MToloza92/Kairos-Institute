@@ -35,15 +35,59 @@ import { Link } from "react-router-dom";
  */
 const TALLERES_IMAGES = [
   {
-    src: "/images/talleres/loremIpsum.webp",
+    src: "/images/talleres/talleres (1).jpeg",
     alt: "Taller artístico escolar",
   },
   {
-    src: "/images/talleres/loremIpsum.webp",
+    src: "/images/talleres/talleres (2).jpeg",
     alt: "Taller deportivo",
   },
   {
-    src: "/images/talleres/loremIpsum.webp",
+    src: "/images/talleres/talleres (3).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (4).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (5).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (6).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (7).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (8).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (9).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (10).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (11).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (12).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (13).jpeg",
+    alt: "Taller científico y experimental",
+  },
+  {
+    src: "/images/talleres/talleres (14).jpeg",
     alt: "Taller científico y experimental",
   },
 ];

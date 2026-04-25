@@ -26,16 +26,24 @@ import ImageCarousel from "../ui/ImageCarousel";
  */
 const HERO_IMAGES = [
   {
-    src: "/public/images/hero/hero (1).jpg",
-    alt: "Comunidad educativa Kairos Institute",
+    src: "images/hero/hero (1).jpeg",
+    alt: "trekking en entorno natural con niños",
   },
   {
-    src: "/public/images/hero/hero (2).jpg",
-    alt: "Aprendizaje consciente en entorno natural",
+    src: "images/hero/hero (2).jpeg",
+    alt: "teatro en espacio educativo Kairos Institute",
   },
   {
-    src: "/public/images/hero/hero (3).jpg",
-    alt: "Espacios educativos Kairos Institute",
+    src: "images/hero/hero (3).jpeg",
+    alt: "fiesta disfraces en espacio educativo Kairos Institute",
+  },
+  {
+    src: "images/hero/hero (4).jpeg",
+    alt: "actividades 18 de septiembre",
+  },
+  {
+    src: "images/hero/hero (5).jpeg",
+    alt: "salida al aire libre con niños y jóvenes",
   },
 ];
 

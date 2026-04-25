@@ -1,4 +1,5 @@
 import Header from "../components/common/Header";
+import PageHero from "../components/sections/PageHero";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import Pillars from "../components/sections/Pillars";
@@ -19,20 +20,12 @@ export default function About() {
     <>
       <Header />
 
-      {/* --------------------------------------------------
-          PAGE HERO
-          --------------------------------------------------
-          Este bloque reemplaza al carrusel del home.
-          En el futuro puede llevar imagen de fondo.
-      */}
-      <section className="w-full bg-gray-100 py-20 text-center">
-        <h1 className="text-3xl font-bold text-gray-900">Sobre Nosotros</h1>
-
-        <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-          Conoce la identidad, misión y visión que dan sentido al proyecto
-          educativo de Kairos Institute.
-        </p>
-      </section>
+      <PageHero
+        backgroundImage="/images/pages/about-hero.jpeg"
+        title="Sobre Nosotros"
+        description="Conoce la identidad, misión y visión que dan sentido al proyecto educativo de Kairos Institute."
+        overlayOpacity={50}
+      />
 
       <Navigation />
 
@@ -47,7 +40,7 @@ export default function About() {
             ¿Quiénes somos?
           </h2>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
+          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <p>
               Para el Centro Educacional Kairos Institute la educación no solo
               consiste en la entrega de conocimientos desde un emisor (docente)
@@ -82,7 +75,7 @@ export default function About() {
             Educar con propósito eterno, acompañar con amor verdadero.
           </div>
 
-          <p className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
+          <p className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             En Kairos creemos que educar no es solo enseñar, es sembrar en
             tierra fértil. Caminamos junto a cada estudiante y su familia,
             respetando procesos, talentos y ritmos.
@@ -96,7 +89,7 @@ export default function About() {
             Visión
           </h2>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
+          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <p>Crear un lugar donde educar sea sanar, fortalecer y liberar.</p>
 
             <p>

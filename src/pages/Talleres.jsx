@@ -1,4 +1,5 @@
 import Header from "../components/common/Header";
+import PageHero from "../components/sections/PageHero";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 
@@ -17,14 +18,12 @@ export default function Talleres() {
   return (
     <>
       <Header />
-
-      {/* HERO / ENCABEZADO */}
-      <section className="w-full bg-gray-800 text-white py-28 text-center">
-        <h1 className="text-4xl font-bold mb-6">Talleres</h1>
-        <p className="max-w-4xl mx-auto text-lg text-gray-200">
-          Formamos desde la experiencia: cuerpo, mente y propósito.
-        </p>
-      </section>
+      <PageHero
+        backgroundImage="/images/pages/talleres-hero.jpeg"
+        title="Talleres Educativos"
+        description="Explora nuestras actividades extracurriculares diseñadas para potenciar las habilidades de nuestros estudiantes."
+        overlayOpacity={60}
+      />
 
       <Navigation />
 
@@ -35,7 +34,7 @@ export default function Talleres() {
             NUESTRA EDUCACIÓN
           </h2>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
+          <div className="bg-gray-50 rounded-xl p-8 space-y-4 leading-relaxed text-gray-900">
             <h3 className="font-semibold text-lg">Talleres Kairos</h3>
 
             <p>
@@ -62,7 +61,7 @@ export default function Talleres() {
             ¿Por qué los talleres son tan importantes?
           </h2>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 text-gray-900">
+          <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-900">
             <p>
               👉 Porque el cerebro aprende mejor en movimiento, con emoción y en
               contextos reales.
@@ -82,7 +81,7 @@ export default function Talleres() {
         {/* TALLERES */}
         <section className="space-y-12">
           {/* Taller */}
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Kayak</h3>
@@ -99,7 +98,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
@@ -120,7 +119,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Montaña</h3>
@@ -138,7 +137,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Arte</h3>
@@ -157,7 +156,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Música</h3>
@@ -176,7 +175,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Folclor</h3>
@@ -196,7 +195,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller de Apicultura</h3>
@@ -214,7 +213,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">Taller Audiovisual</h3>
@@ -232,7 +231,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
@@ -252,7 +251,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">
@@ -282,7 +281,7 @@ export default function Talleres() {
             </div>
           </div>
 
-          <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+          <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
             <div className="w-1 bg-gray-300 rounded-full"></div>
             <div className="space-y-3 text-gray-900">
               <h3 className="font-semibold text-lg">

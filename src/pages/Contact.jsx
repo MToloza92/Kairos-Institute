@@ -15,6 +15,7 @@
  */
 
 import Header from "../components/common/Header";
+import PageHero from "../components/sections/PageHero";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import ContactForm from "../components/forms/ContactForm";
@@ -24,6 +25,12 @@ export default function Contact() {
   return (
     <>
       <Header />
+      <PageHero
+        backgroundImage="/images/pages/contact-hero.jpeg"
+        title="Contáctanos"
+        description="¿Tienes dudas o preguntas? Nos encantaría escucharte. Completa el formulario y nos pondremos en contacto."
+        overlayOpacity={50}
+      />
       <Navigation />
 
       <main className="w-full bg-gray-50 py-20">

@@ -15,6 +15,7 @@
 
 // Componentes comunes del layout
 import Header from "../components/common/Header";
+import PageHero from "../components/sections/PageHero";
 import Navigation from "../components/common/Navigation";
 import Footer from "../components/common/Footer";
 import EditorialDivider from "../components/ui/EditorialDivider";
@@ -24,18 +25,12 @@ export default function ProyectoEducativo() {
     <>
       <Header />
 
-      {/* ==================================================
-          HERO DE PÁGINA
-          --------------------------------------------------
-          Espacio visual equivalente al carrusel del Home.
-          Más adelante puede llevar imagen de fondo.
-          Queda fuera del <main> para no heredar estilos.
-         ================================================== */}
-      <section className="w-full h-64 bg-gray-200 flex items-center justify-center">
-        <h1 className="text-3xl font-semibold text-gray-800">
-          Proyecto Educativo
-        </h1>
-      </section>
+      <PageHero
+        backgroundImage="/images/pages/proyecto-hero.jpeg"
+        title="Proyecto Educativo"
+        description="Descubre cómo concebimos la educación..."
+        overlayOpacity={55}
+      />
 
       <Navigation />
 
@@ -61,7 +56,7 @@ export default function ProyectoEducativo() {
               Inscripción Mineduc – Exámenes libres
             </h3>
 
-            <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 text-gray-900">
+            <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-900">
               <p>
                 <a
                   href="https://www.ayudamineduc.cl/ficha/examenes-libres-menores-de-18-anos-11"
@@ -82,7 +77,7 @@ export default function ProyectoEducativo() {
               Certificado de Estudio Mineduc
             </h3>
 
-            <div className="bg-[#4f8d3a] rounded-xl p-8 space-y-4 text-gray-900">
+            <div className="bg-gray-50 rounded-xl p-8 space-y-4 text-gray-900">
               <p>
                 <a
                   href="https://certificados.mineduc.cl/mvc/home/index"
@@ -118,7 +113,7 @@ export default function ProyectoEducativo() {
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
                 Estudiantes Deportivos
               </h2>
-              <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+              <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
                 {/* Línea decorativa */}
                 <div className="w-1 bg-gray-300 rounded-full"></div>
 
@@ -191,7 +186,7 @@ export default function ProyectoEducativo() {
               Preuniversitario
             </h2>
 
-            <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+            <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
               <div className="w-1 bg-gray-300 rounded-full"></div>
 
               <div className="space-y-4 text-gray-900 leading-relaxed">
@@ -235,7 +230,7 @@ export default function ProyectoEducativo() {
                 Inglés – English
               </h2>
 
-              <div className="bg-[#4f8d3a] rounded-xl p-8 flex gap-6">
+              <div className="bg-gray-50 rounded-xl p-8 flex gap-6">
                 {/* Línea decorativa */}
                 <div className="w-1 bg-gray-300 rounded-full"></div>
 
